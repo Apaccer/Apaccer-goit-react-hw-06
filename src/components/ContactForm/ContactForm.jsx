@@ -22,7 +22,7 @@ const FORM_INITIAL_VALUES = {
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector((state) => state.selectContacts.contacts.items);
+  const contacts = useSelector((state) => state.contacts.contacts.items);
 
   const handleSubmit = (values, actions) => {
     const finalContact = { id: nanoid(), ...values };
